@@ -6,14 +6,14 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <>
-    <nav className=' bg-black text-white  mt-4'>
+    <nav className=' bg-black text-white  mt-4 h-10'>
       
-        <ul className='flex justify-evenly'>
-         <li> <Link to='/'>Home</Link></li>
-         <li> <Link to='Contact'>Contact</Link></li>
-         <li> <Link to='About'>About</Link></li>
-         <li> <Link to='Product'>Product</Link></li>
-         <li> <Link to='Service'>Service</Link></li>
+        <ul className='flex justify-evenly items-center'>
+         <li> <Link to=''>Home</Link></li>
+         <li> <Link to='contact'>Contact</Link></li>
+         <li> <Link to='about'>About</Link></li>
+         <li> <Link to='product'>Product</Link></li>
+         <li> <Link to='service'>Service</Link></li>
 
            
         </ul>

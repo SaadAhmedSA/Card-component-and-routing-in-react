@@ -1,10 +1,10 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const Card = ({src,title,catagery,price,id, showbtn = true}) => {
-  const navig = useNavigate()
+const Card = ({src,title,catagery,price,id, showbtn = true , des}) => {
+  const navigate = useNavigate()
   function show(){
-    navig(`/singleproduct/${id}`)
+    navigate(`/singleproduct/${id}`)
   }
   return (
     <div>
@@ -16,7 +16,8 @@ const Card = ({src,title,catagery,price,id, showbtn = true}) => {
   </figure>
   <div className="card-body">
     <h2 className="card-title">{title}!</h2>
-    <p>{price}</p>
+    <p>${price}</p>
+    <p>{des}</p>
     <p>{catagery}</p>
     <div className="card-actions justify-centre">
      {showbtn ? <button onClick={show} className="btn btn-primary">Buy Now</button>:null}
